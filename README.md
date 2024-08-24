@@ -1,5 +1,8 @@
 # Calculadora-Bison
-Calculadora en bisom
+
+Elkin Benitez y Santiago Gonzales
+
+Calculadora en bison
 
 Realizamos una calculadora la cual funciona de manera correcta permitiendo el calculo de operaciones tanto simples como complejas, dando resultados correctos y dando confianza para su uso regular
 
