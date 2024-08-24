@@ -20,3 +20,14 @@ El arbol de sintaxis se utiliza para evaluar la aexpresion, validando que cada c
 - Una vez que acepte la cadena y que cada simbolo se convierta en untoken que el programa puede leer, se le otorga su respectivo equivalencia, si es 3 es NUM, si es ( en LPAR, si es + es SUM y asi sucesivamente.
 - Al identifica cada token, va armando el arbol teniendo en ceunta diferentes factores como lo son, la jerarquia de la operacion, los operadores y operandos
 - Despues de construirlo, lee en orden descendiente, nodo y hojas, y va haceindo operacion por operacion hasta que se llega a un resultado final.
+
+
+# Pasos para ejecutar el programa:
+
+- se debe crear un archivo de texto con el comando nano y nombre del archivo .l para flex y .y para bison -> nano calculadora.l y nano calculadora.y
+- luego generar archivo en c de bison con el  -> bison -d calculadora.y
+- luego generar archivo en c de flex -> flex calculadora.l
+- ahora para compilar los dos archivos C vamos a utilizar el sigueinte comando -> gcc -o calculadora calculadora.tab.c lex.yy.c -lfl -lm
+- ahora ejecutamos la calculadora -> ./calculadora
+
+y listo, quedó para utilizar 
