@@ -32,5 +32,7 @@ El arbol de sintaxis se utiliza para evaluar la aexpresion, validando que cada c
 - luego generar archivo en c de flex -> flex calculadora.l
 - ahora para compilar los dos archivos C vamos a utilizar el sigueinte comando -> gcc -o calculadora calculadora.tab.c lex.yy.c -lfl -lm
 - ahora ejecutamos la calculadora -> ./calculadora
+El programa tambien recibe archivo de texto con operaciones, que cuando se ingresa, el arroja las respuestas y tambien maneja entrada de operaciones por consola
+nota: Los signos matematicos que se pueden utilizar para operaciones como elevado, raiz, modulo, estan en el flex, definidas por sus respectivos tokens, al igual que las demas
 
 y listo, quedó para utilizar 
